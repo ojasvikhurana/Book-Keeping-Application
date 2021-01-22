@@ -1,0 +1,14 @@
+{
+  "name": "book-keeping-app",
+  "version": "1.0.0",
+  "description": "A book keeping application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ojasvi Khurana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
