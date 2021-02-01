@@ -3,6 +3,7 @@ const app = express();
 const usersRoute = require('./routes/usersRoute');
 const dotenv = require('dotenv');
 const error = require('./middlewares/errorMiddlewareHandler');
+const bookRouter = require('./routes/booksRoutes');
 dotenv.config();
 require('./config/dbConnect')(); //dbConnect
 
@@ -14,6 +15,9 @@ app.use(express.json());
 //routes
 //users routes
 app.use('/api/users',usersRoute); 
+
+//book routes
+app.use('/api/books',bookRouter);
 
 // console.log(process.env.JWT_SECRET_KEY);
 
