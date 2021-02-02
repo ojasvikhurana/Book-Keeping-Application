@@ -5,7 +5,7 @@ const errorMiddlewareHandler = (err, req,res, next)=>{
     e=res.json({
         message: err.message,
     });
-
+    next();
 };
 
 module.exports = {errorMiddlewareHandler};
