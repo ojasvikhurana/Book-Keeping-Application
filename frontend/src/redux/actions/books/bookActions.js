@@ -23,7 +23,7 @@ const createBookAction = (bookData)=>{
         } catch (error) {
             dispatch({
                 type: CREATE_BOOK_FAIL,
-                payloadL: error.response && error.response.data.message,
+                payload: error.response && error.response.data.message,
             });
         }
     };
